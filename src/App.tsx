@@ -1,3 +1,7 @@
-const App = () => <h1>ToDo app works!</h1>
+import Home from './pages/home/Home'
+
+const App = () => {
+  return <Home />
+}
 
 export default App
