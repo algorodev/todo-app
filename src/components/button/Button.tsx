@@ -1,5 +1,12 @@
-const Button = () => {
-  return <h4>Button works!</h4>
+import { ButtonProps } from './button.types'
+import './Button.scss'
+
+const Button = ({ id, label, onButtonClick }: ButtonProps) => {
+  return (
+    <button id={id} className='button' onClick={onButtonClick}>
+      <label htmlFor={id} className='button__label'>{label}</label>
+    </button>
+  )
 }
 
 export default Button

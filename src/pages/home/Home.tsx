@@ -6,7 +6,9 @@ const Home = () => {
   return (
     <section className='home'>
       <div className='home__actions'>
-        <Button />
+        <Button id='new-todo-button'
+                label='New Todo'
+                onButtonClick={() => console.log('click!')} />
       </div>
       <div className='home__list'>
         <TodoList />
