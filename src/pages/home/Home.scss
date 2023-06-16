@@ -1,0 +1,21 @@
+@import '../../styles/index';
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__actions {
+    margin-bottom: 20px;
+    text-align: end;
+    width: 90%;
+    max-width: 100rem;
+    border-bottom: 2px solid $black-color;
+  }
+
+  &__list {
+    width: 90%;
+    max-width: 100rem;
+  }
+}
