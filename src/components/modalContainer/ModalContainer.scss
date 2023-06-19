@@ -1,0 +1,39 @@
+@import "../../styles/index";
+
+.modal {
+  width: 35%;
+  position: fixed;
+  top: 20vh;
+  left: 0;
+  right: 0;
+  background-color: $white-color;
+  margin: 0 auto;
+  z-index: 30;
+  animation: slide-down 300ms ease-out forwards;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+    padding: 2rem 3rem;
+    border-bottom: 1px solid $grey-color;
+  }
+
+  &__title {
+    font-weight: bold;
+  }
+
+  &__action {
+    width: 3rem;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: line-through;
+    }
+  }
+
+  &__body {
+    padding: 1rem 3rem;
+  }
+}
