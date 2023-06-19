@@ -1,9 +1,10 @@
 import Button from '../../components/button/Button'
 import TodoList from '../../components/todoList/TodoList'
 import { TodoI } from '../../types/todo.types'
+import { HomeProps } from './home.types'
 import './Home.scss'
 
-const Home = () => {
+const Home = ({ onButtonClick }: HomeProps) => {
   const TODO: TodoI[] = [
     {
       id: 1,
@@ -24,14 +25,14 @@ const Home = () => {
   ]
 
   return (
-    <section className='home'>
-      <div className='home__actions'>
-        <Button id='new-todo-button'
-                label='New Todo'
-                onButtonClick={() => console.log('click!')} />
+    <section className="home">
+      <div className="home__actions">
+        <Button id="new-todo-button"
+                label="New Todo"
+                onButtonClick={onButtonClick}/>
       </div>
-      <div className='home__list'>
-        <TodoList items={TODO} />
+      <div className="home__list">
+        <TodoList items={TODO}/>
       </div>
     </section>
   )
