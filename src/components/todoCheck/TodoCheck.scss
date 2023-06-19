@@ -1,0 +1,15 @@
+@import "../../styles/index";
+
+.todo-check {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 4rem;
+  height: 4rem;
+  border: 3px solid $black-color;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &--checked {
+    background-color: $primary-color;
+  }
+}

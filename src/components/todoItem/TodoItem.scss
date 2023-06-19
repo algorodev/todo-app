@@ -1,0 +1,41 @@
+@import "../../styles/index";
+
+.todo-item {
+  height: 10rem;
+  width: 100%;
+  max-width: 100rem;
+  display: flex;
+  align-items: center;
+  border: 1px solid $grey-color;
+  border-radius: 1rem;
+  list-style: none;
+  margin-bottom: 2rem;
+
+  &__check {
+    width: 20%;
+    max-width: 10rem;
+    text-align: center;
+  }
+
+  &__info {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+
+  &__title {
+    font-weight: bold;
+  }
+
+  &__time {
+    font-weight: bold;
+    color: $yellow-color;
+    margin-left: 1rem;
+  }
+
+  &__tag-container {
+    width: 20%;
+    max-width: 10rem;
+    text-align: center;
+  }
+}
