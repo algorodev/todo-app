@@ -5,6 +5,6 @@ describe('App', () => {
   it('should render application as expected', () => {
     render(<App/>)
     expect(screen.getByRole('button')).toBeInTheDocument()
-    expect(screen.getByText('TodoList works!')).toBeInTheDocument()
+    expect(screen.getByText('Workout')).toBeInTheDocument()
   })
 })

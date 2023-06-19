@@ -7,6 +7,6 @@ describe('Home page', () => {
     fireEvent.click(screen.getByRole('button'))
 
     expect(screen.getByRole('button')).toBeInTheDocument()
-    expect(screen.getByText('TodoList works!')).toBeInTheDocument()
+    expect(screen.getByText('Workout')).toBeInTheDocument()
   })
 })
