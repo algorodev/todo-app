@@ -9,7 +9,7 @@ const App = () => {
     <Fragment>
       {isModalOpen && (
         <Modal title='New Todo' onClose={() => setIsModalOpen(false)}>
-          <p>hola que tal</p>
+          <p>Modal works!</p>
         </Modal>
       )}
       <Home onButtonClick={() => setIsModalOpen(true)} />
