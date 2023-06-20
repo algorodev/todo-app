@@ -41,8 +41,7 @@ const TodoForm = () => {
       } />
       <Button id='todo-form-submit'
               label='Submit'
-              onButtonClick={onSubmit}
-              disabled={false}/>
+              onButtonClick={onSubmit}/>
     </Form>
   )
 }
